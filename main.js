@@ -66,4 +66,30 @@ console.log(testMap); */
 
 //reduce
 
+//Determine overlapping numbers in ranges
 
+var arr = [10, 20, 4, 14, 4];
+let rangeOne = [];
+let rangeTwo = [];
+
+for(var i = arr[0]; i <= arr[1]; i++ ){
+    rangeOne.push(i);
+}
+console.log(rangeOne);
+for(var i = arr[2]; i<= arr[3]; i++){
+    rangeTwo.push(i);
+}
+console.log(rangeTwo);
+var numbers = [];
+for(var i =0; i< rangeOne.length; i++){
+    console.log(rangeOne[i]);
+    for(var j=0; j< rangeTwo.length; j++){
+        if(rangeOne[i]===rangeTwo[j]){
+            numbers.push(rangeOne[i]);
+         console.log('anshul')
+            
+        }
+    }
+}
+console.log(numbers);
+/* var rangeOne =  */
